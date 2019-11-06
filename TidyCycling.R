@@ -34,7 +34,6 @@ chart_total <- hchart(final, "heatmap", hcaes(x = city_size, y = state, value = 
            gridLineWidth = 0, minorGridLineWidth = 0,
            labels = list(style = list(fontSize = "10px"))) %>% 
   hc_tooltip(formatter = fntltp) %>% 
-  hc_xAxis(plotLines = list(plotline)) %>%
   hc_title(text = "Percent of population using eco-friendly methods to travel to work") %>% 
   hc_legend(layout = "vertical", verticalAlign = "top",
             align = "right", valueDecimals = 0) %>% 
